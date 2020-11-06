@@ -1,0 +1,430 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+.nav {
+	font-size: 1.20rem;
+	background-color: #3E3D3D; 
+}
+.nav .nav__nav_list { /*ul*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.nav .nav__nav_list .nav__nav_lists {
+	padding: 0.6875rem 0.8125rem;
+	font-family: 'Oswald', sans-serif;
+} 
+
+.nav__nav_list .nav__nav_lists a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav__nav_lists:hover,
+.nav__nav_lists:focus {
+	background: black;
+	text-decoration: none;
+}
+
+.nav__nav_lists a:hover,
+.nav__nav_lists a:focus {
+	color: silver;
+}
+
+
+/* .nav__nav_list .nav__nav_lists a:hover,
+.nav__nav_list .nav__nav_lists a:focus {
+	background: black;
+	text-decoration: none;
+	color: silver;
+} */
+
+/*MAIN*/
+/* .mainpage {
+	margin: 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: linear-gradient(rgba(55,55,55,0.17), rgba(55,55,55,0.17)), url(https://cdn-image.departures.com/sites/default/files/styles/responsive_900x600/public/1543867430/south-beach-sunset-palm-trees-miami-florida-AMEXPLATMIAMI1218.jpg?itok=W5mWApux); 
+} */
+.mainpage {
+	height: 125vh;
+	width: 99vw;
+	/* position: relative; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: linear-gradient(rgba(55,55,55,0.27), rgba(55,55,55,0.27)), url(https://cdn-image.departures.com/sites/default/files/styles/responsive_900x600/public/1543867430/south-beach-sunset-palm-trees-miami-florida-AMEXPLATMIAMI1218.jpg?itok=W5mWApux); 
+}
+.title {
+	margin: 0;
+	position: absolute;
+	left: 28%;
+	top: 10%;
+	display: inline-block;
+}
+
+.neon-lights {
+	position: relative;
+	top: 28%;
+	
+}
+.neon-yellow1 {
+	margin: 0;
+	color: #FFFCDC;
+	font-family: 'Damion', cursive;
+	text-shadow: 4px 4px 40px yellow;
+	text-align: center;
+	filter: brightness(110%);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color:#FFF375;
+	text-decoration-line: none; 
+	font-size: 4.5rem;
+	animation: fadein1 2s;
+}
+.neon-yellow2 {
+	margin: 0;
+	color: #FFFCDC;
+	font-family: 'Damion', cursive;
+	text-shadow: 4px 4px 40px yellow;
+	text-align: center;
+	filter: brightness(110%);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color:#FFF375;
+	text-decoration-line: none; 
+	display: hidden;
+	font-size: 4.5rem;
+	animation: fadein1 2s 1s;
+	
+}
+.neon-yellow3 {
+	margin: 0;
+	color: #FFFCDC;
+	font-family: 'Damion', cursive;
+	text-shadow: 4px 4px 40px yellow;
+	text-align: center;
+	filter: brightness(110%);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color:#FFF375;
+	text-decoration-line: none; 
+	font-size: 4.5rem;
+}
+.neon-yellow4 {
+	margin: 0;
+	color: #FFFCDC;
+	font-family: 'Damion', cursive;
+	text-shadow: 4px 4px 40px yellow;
+	text-align: center;
+	filter: brightness(110%);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color:#FFF375;
+	text-decoration-line: none; 
+	font-size: 4.5rem;
+}
+
+.glance {
+	margin: 0;
+	font-size: 5.5rem;
+	color: #B8FEFF;
+	font-family: 'Damion', cursive;
+	-webkit-text-stroke-width: 1px; 
+	-webkit-text-stroke-color: #00FBFF;             
+	text-shadow: 0px 0px 40px  #00FBFF; 
+	filter: brightness(120%);
+	filter: blur(1px);
+	position: absolute;
+	top: 110%;
+}
+
+
+.wynwood_background {
+	background-image: url(../img/Wynwood_walls_sign.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 99vw;
+	height: 49vh;
+}
+.wynwood_text {
+	text-align: center;
+	font-size: large;
+	padding-top: 0.875rem;
+	width: auto;
+	height: 70px;
+	background: linear-gradient(rgba(55,55,55,0.83), rgba(55,55,55,0.83));
+	transition: height, font-size 2em, background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+	transition-duration: .25s;
+	transition-timing-function: linear;
+}
+.wynwood_text a {
+	color: white; font-family: 'Oswald', sans-serif;
+	text-decoration-line: none;
+}
+.wynwood_text:hover {
+	padding-top: 1.625rem;
+	width: auto;
+	height: 130px;
+	font-size: 2em;
+	background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+}
+.wynwood_text a:active {
+	color: rgb(126, 126, 126);
+}
+.wynwood_text:hover .wynwood_background {
+	background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+}
+
+
+.glades_background {
+	background-image: url(../img/gladespic.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 99vw;
+	height: 49vh;
+}
+
+.glades_text {
+	text-align: center;
+	font-size: large;
+	padding-top: 0.875rem;
+	width: auto;
+	height: 70px;
+	background: linear-gradient(rgba(55,55,55,0.83), rgba(55,55,55,0.83));
+	transition: height, font-size 2em, background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+	transition-duration: .25s;
+	transition-timing-function: linear;
+}
+.glades_text a {
+	color: white; font-family: 'Oswald', sans-serif; 
+	text-decoration-line: none;
+}
+
+.glades_text:hover {
+	padding-top: 1.625rem;
+	width: auto;
+	height: 130px;
+	font-size: 2em;
+	background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+}
+.glades_text a:active {
+	color: rgb(126, 126, 126);
+}
+
+.sbeach_background {
+	background-image: url(../img/sobeach.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 99vw;
+	height: 49vh;
+}
+.sbeach_text {
+	text-align: center;
+	font-size: large;
+	padding-top: 0.875rem;
+	width: auto;
+	height: 70px;
+	background: linear-gradient(rgba(55,55,55,0.83), rgba(55,55,55,0.83));
+	transition: height, font-size 2em, background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+	transition-duration: .25s;
+	transition-timing-function: linear;
+}
+.sbeach_text a {
+	color: white; font-family: 'Oswald', sans-serif; 
+	text-decoration-line: none;
+}
+
+.sbeach_text:hover {
+	padding-top: 1.625rem;
+	width: auto;
+	height: 130px;
+	font-size: 2em;
+	background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+}
+.sbeach_text a:active {
+	color: rgb(126, 126, 126);
+}
+.ocean_drive_background {
+	background-image: url(../img/oceandrive.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 99vw;
+	height: 49vh;
+}
+.ocean_drive_text {
+	text-align: center;
+	font-size: large;
+	padding-top: 0.875rem;
+	width: auto;
+	height: 70px;
+	background: linear-gradient(rgba(55,55,55,0.83), rgba(55,55,55,0.83));
+	transition: height, font-size 2em, background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+	transition-duration: .25s;
+	transition-timing-function: linear;
+}
+.ocean_drive_text a {
+	color: white; font-family: 'Oswald', sans-serif; 
+	text-decoration-line: none;
+}
+
+.ocean_drive_text:hover {
+	padding-top: 1.625rem;
+	width: auto;
+	height: 130px;
+	font-size: 2em;
+	background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+}
+.ocean_drive_text a:active {
+	color: rgb(126, 126, 126);
+}
+
+.nightlife_background {
+	background-image: url(../img/liv.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 99vw;
+	height: 49vh;
+}
+
+.nightlife_text {
+	text-align: center;
+	font-size: large;
+	padding-top: 0.875rem;
+	width: auto;
+	height: 70px;
+	background: linear-gradient(rgba(55,55,55,0.83), rgba(55,55,55,0.83));
+	transition: height, font-size 2em, background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+	transition-duration: .25s;
+	transition-timing-function: linear;
+	
+}
+
+.nightlife_text a {
+	color: white; font-family: 'Oswald', sans-serif;
+	text-decoration-line: none;
+}
+.nightlife_text:hover {
+	padding-top: 1.625rem;
+	width: auto;
+	height: 130px;
+	font-size: 2em;
+	background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+}
+.nightlife_text a:active {
+	color: rgb(126, 126, 126);
+}
+
+.top_link_position {
+	position: absolute;
+	top: 303%;
+	left: 47%;
+}
+
+.top_btn {
+	border: 1.5px solid white;
+	background: linear-gradient(rgba(55,55,55,.97), rgba(55,55,55,.97));
+	padding: .5rem .5rem;
+	border-radius: 0.375rem;
+	color: white;
+	font-weight: bolder;
+	text-transform: uppercase;
+	position: relative;
+	top: 80%;
+}
+.top_btn:hover {
+	background: linear-gradient(rgba(167,167,167,.97), rgba(167,167,167,.97));
+	cursor: pointer;
+	color: black;
+}
+
+.icon {
+	margin-left: .5rem;
+}
+
+
+
+.footer {
+	background:#3E3D3D;
+	padding: 0.625rem 0.75rem;
+}
+
+.footer_list { /*ul*/
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding-inline-start: 0;
+
+}
+
+.footer_lists  {
+	display: inline-block;
+	padding: 0px 1rem;
+}
+
+.footer_lists a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+}
+.footer_lists a:hover,
+.footer_lists a:focus,
+.footer_lists a:active {
+	color: silver;
+}
+
+h1 {
+	margin: 0;
+}
+
+
+@keyframes fadein1 {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+
+ @media (min-width: 415px) {
+	.mainpage {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 58.75rem;
+	}
+} 
+
+@media (min-width: 688px) {
+	.glance {
+		margin: 0;
+		font-size: 5.5rem;
+		color: #B8FEFF;
+		font-family: 'Damion', cursive;
+		-webkit-text-stroke-width:1px;
+		-webkit-text-stroke-color:#00FBFF;
+		text-shadow: 0px 0px 40px #00E8FF;
+		filter: brightness(120%);
+		padding-top: 11rem;
+	}
+}
+
+
+
+
+
+ @media (min-width: 415px) {
+	.top_link_position {
+		position: absolute;
+		top: 328.5%;
+		left: 47.7%;
+	}
+} 
